@@ -1,0 +1,42 @@
+name: d8_materialize
+type: theme
+description: Drupal 8 Materialize
+package: Custom
+base theme: classy
+core: 8.x
+version: 1.0
+
+libraries:
+  - d8_materialize/global-styles
+#  - classy/base
+#  - core/normalize
+
+libraries-extend:
+#  user/drupal.user:
+#    - classy/user
+#  core/drupal.dropbutton:
+#    - classy/dropbutton
+#  core/drupal.dialog:
+#    - classy/dialog
+
+stylesheets-remove:
+  - core/assets/vendor/jquery.ui/themes/base/core.css
+  - core/assets/vendor/jquery.ui/themes/base/button.css
+  - core/assets/vendor/jquery.ui/themes/base/resizable.css
+  - core/assets/vendor/jquery.ui/themes/base/dialog.css
+  - core/modules/system/css/components/container-inline.module.css
+  - core/modules/editor/css/editor.css
+  - '@classy/css/components/tabs.css'
+  - '@classy/css/components/form.css'
+  - '@classy/css/components/details.css'
+#  - core/assets/vendor/normalize-css/normalize.css
+
+regions:
+  header_left: 'Header Left'
+  header_right: 'Header Right'
+  sidebar: 'Sidebar'
+  navigation: 'Navigation'
+  content: 'Content'
+  footer_left: 'Footer Left'
+  footer_right: 'Footer Right'
+  footer_bottom: 'Footer Bottom'
