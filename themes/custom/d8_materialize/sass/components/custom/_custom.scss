@@ -33,6 +33,9 @@ $custom-color: color("teal", "lighten-2");
 
 #block-d8-materialize-account-menu {
   text-align: right;
+  a.btn.dropdown-button {
+    color: #ffffff;
+  }
 }
 
 nav.breadcrumb,
@@ -79,8 +82,23 @@ nav.breadcrumb {
   margin: 20px 0;
 }
 
+// Top navigation
 .top-nav {
   height: auto;
+  color: #39434C;
+  a {
+    color: #39434C;
+  }
+  &.sticky {
+    position: relative;
+    nav {
+      position: fixed;
+      z-index: 9999999;
+    }
+  }
+}
+.path-frontpage .top-nav.sticky {
+  position: inherit;
 }
 
 nav.menu--main {
@@ -110,7 +128,9 @@ li.menu-item.level-1 {
 }
 .site-name {
   line-height: initial;
-  font-size: 2em;
+  font-size: 1.25em;
+  position: relative;
+  bottom: 15px;
 }
 
 // Footer
@@ -146,5 +166,40 @@ footer.page-footer {
     display: none;
   }
 }
+.parallax-container {
+  h1, h2, h3 {
+    padding-top:1em;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0px 3px 6px #000;
+  }
+  h2 {
+    padding-top: .5em;
+  }
+  h3 {
+    padding-top: .35em;
+  }
+}
+.image-style-profile-250-x-250-,
+.image-style-thumbnail {
+  border-radius: 50%;
+}
+.block-views-blockspeakers-block-1 {
+  overflow: hidden;
+  width: 70%;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+  }
+}
+.view-speakers {
+  .item.views-row {
+    width: 33%;
+    float: left;
+    padding: 1em 0;
+    text-align: center;
+  }
+}
+
 
 
