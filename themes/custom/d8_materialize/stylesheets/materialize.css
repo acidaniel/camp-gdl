@@ -8126,19 +8126,43 @@ nav .button-collapse {
 .node__submitted {
   margin: 20px 0; }
 
+#block-d8-materialize-account-menu {
+  height: 64px;
+  visibility: visible;
+  opacity: 1; }
+
+.site-logo img {
+  height: 95px;
+  -webkit-transition: height 100ms;
+  transition: height 100ms; }
+
 .top-nav {
-  height: auto;
-  color: #39434C; }
+  height: 160px;
+  color: #39434C;
+  -webkit-transition: all 500ms;
+  transition: all 500ms; }
   .top-nav a {
     color: #39434C; }
   .top-nav.sticky {
-    position: relative; }
-    .top-nav.sticky nav {
-      position: fixed;
-      z-index: 9999999; }
-
-.path-frontpage .top-nav.sticky {
-  position: inherit; }
+    position: fixed;
+    height: 75px;
+    z-index: 9999999;
+    opacity: .95; }
+    .top-nav.sticky .site-name {
+      display: none; }
+    .top-nav.sticky .site-logo img {
+      -webkit-transition: all 300ms;
+      transition: all 300ms;
+      height: 50px;
+      width: auto; }
+    .top-nav.sticky #block-d8-materialize-account-menu {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      -webkit-transition: all 100ms;
+      transition: all 100ms; }
+    .top-nav.sticky #block-d8-materialize-branding {
+      height: 58px; }
 
 nav.menu--main {
   box-shadow: none; }

@@ -87,23 +87,66 @@ nav .button-collapse {
   margin: 20px 0;
 }
 
-// Top navigation
+// Top navigation animation
+#block-d8-materialize-account-menu {
+  height: 64px;
+  visibility: visible;
+  opacity: 1;
+}
+.site-logo img {
+  height: 95px;
+  -webkit-transition: height 100ms;
+  -moz-transition: height 100ms;
+  -ms-transition: height 100ms;
+  -o-transition: height 100ms;
+  transition: height 100ms;
+}
+
 .top-nav {
-  height: auto;
+  height: 160px;
   color: #39434C;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
   a {
     color: #39434C;
   }
   &.sticky {
-    position: relative;
-    nav {
-      position: fixed;
-      z-index: 9999999;
+    position: fixed;
+    height: 75px;
+    z-index: 9999999;
+    opacity: .95;
+    .site-name {
+      display: none;
     }
+    .site-logo {
+      img {
+        -webkit-transition: all 300ms;
+        -moz-transition: all 300ms;
+        -ms-transition: all 300ms;
+        -o-transition: all 300ms;
+        transition: all 300ms;
+        height: 50px;
+        width: auto;
+      }
+    }
+    #block-d8-materialize-account-menu {
+      visibility: hidden;
+      opacity: 0;
+      height: 0;
+      -webkit-transition: all 100ms;
+      -moz-transition: all 100ms;
+      -ms-transition: all 100ms;
+      -o-transition: all 100ms;
+      transition: all 100ms;
+    }
+    #block-d8-materialize-branding {
+      height: 58px;
+    }
+
   }
-}
-.path-frontpage .top-nav.sticky {
-  position: inherit;
 }
 
 nav.menu--main {

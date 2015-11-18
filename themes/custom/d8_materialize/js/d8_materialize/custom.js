@@ -6,20 +6,21 @@ jQuery(document).ready(function() {
 
     // Sticky Navigation.
 
-    //jQuery(window).scroll(function() {
-    //    var topnav = jQuery('.top-nav');
-    //    var navw = jQuery('.nav-wrapper');
-    //    var scroll = jQuery(window).scrollTop();
-    //    if(navw.offset().top < scroll) {
-    //        if(topnav.hasClass('sticky') === false) {
-    //            topnav.addClass('sticky');
-    //        } else {
-    //            return;
-    //        }
-    //    } else if(navw.offset().top > scroll) {
-    //        topnav.removeClass('sticky');
-    //    }
-    //});
+    jQuery(window).scroll(function() {
+        var topnav = jQuery('.site-logo img').position();
+        var topdistance = topnav.top
+        var scroll = jQuery(window).scrollTop();
+        stickyNav(topdistance, scroll);
+    });
+    function stickyNav(t, s) {
+        if(t < s) {
+            console.log('activate');
+            jQuery('.top-nav').addClass('sticky').removeClass('no-sticky');
+        } else if(s === 0) {
+            console.log('deactivate');
+            jQuery('.top-nav').removeClass('sticky').addClass('no-sticky');
+        }
+    }
 
 
 });
