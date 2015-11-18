@@ -1,42 +1,4 @@
-<nav class="top-nav">
-    <div class="container">
-        <div class="row l-header">
-            {% if page.header_left %}
-                <div class="col s7">
-                    {{ page.header_left }}
-                </div>
-            {% endif %}
-            {% if page.header_right %}
-                <div class="col s5">
-                    {{ page.header_right }}
-                </div>
-            {% endif %}
-        </div>
-        {% if page.navigation %}
-            <div class="row l-navigation">
-                <div class="col s12">
-                    {{ page.navigation }}
-                </div>
-            </div>
-        {% endif %}
-    </div>
-</nav>
-{# parallax test start #}
-{#<div class="parallax-container">#}
-    {#<div class="parallax"><img src="themes/custom/d8_materialize/images/custom/gdl1.jpg"></div>#}
-    {#<div class="container">#}
-        {#<h1 style="color:white;text-shadow: 2px 2px #000;text-align: center;padding-top: 20px;">Drupalcamp Guadalajara 2016</h1>#}
-    {#</div>#}
-{#</div>#}
-{#<div class="section white">#}
-    {#<div class="row container">#}
-        {#<h2 class="header">Parallax</h2>#}
-        {#<p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>#}
-    {#</div>#}
-{#</div>#}
-{#<div class="parallax-container">#}
-    {#<div class="parallax"><img src="themes/custom/d8_materialize/images/custom/udg1.jpg"></div>#}
-{#</div>#}
+{% include 'region--header.html.twig' %}
 {% if page.content %}
     {{ page.content }}
 {% endif %}

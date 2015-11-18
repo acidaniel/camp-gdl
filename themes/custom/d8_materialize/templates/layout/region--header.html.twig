@@ -1,0 +1,16 @@
+<nav class="top-nav">
+    <div class="container">
+        <div class="row l-header">
+            {% if page.header_left %}
+                <div class="col s4">
+                    {{ page.header_left }}
+                </div>
+            {% endif %}
+            {% if page.header_right %}
+                <div class="col s8">
+                    {{ page.header_right }}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</nav>

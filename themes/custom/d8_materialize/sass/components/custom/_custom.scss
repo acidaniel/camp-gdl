@@ -60,6 +60,11 @@ nav.breadcrumb {
     color: #9E9E9E;
   }
 }
+
+nav .button-collapse {
+  float: right;
+}
+
 // Tabs.
 .tabs {
   height: inherit;
@@ -123,7 +128,7 @@ li.menu-item.level-1 {
 
 // Branding Block
 .block-system-branding-block {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 5px;
 }
 .site-name {
@@ -131,6 +136,16 @@ li.menu-item.level-1 {
   font-size: 1.25em;
   position: relative;
   bottom: 15px;
+  @media #{$medium-and-down} {
+    display: none !important;
+  }
+}
+
+.block-menu.navigation.menu--main {
+  @media #{$medium-and-down} {
+    width: 30%;
+    float: right;
+  }
 }
 
 // Footer
@@ -192,13 +207,63 @@ footer.page-footer {
     text-align: center;
   }
 }
+//Block speakers homepage.
+.block-views-blockspeakers-block-1 {
+  margin-bottom: 40px;
+  .image-style-medium {
+    margin-bottom: 17px;
+    border-radius: 50%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    &:hover {
+      //-webkit-transform: scale(1.05);
+      //transform: scale(1.05);
+      -webkit-animation: flash 1.5s;
+      animation: flash 1.5s;
+    }
+  }
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: .4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .view-speakers {
   .item.views-row {
     width: 33%;
     float: left;
     padding: 1em 0;
     text-align: center;
+    @media #{$medium-and-down} {
+      img {
+        width: 80%;
+        height: 80%;
+      }
+    }
   }
+}
+.views-element-container {
+  h2 {
+    font-size: 3em;
+  }
+}
+
+// Views
+.view-id-frontpage {
+  margin: 40px 0;
 }
 
 

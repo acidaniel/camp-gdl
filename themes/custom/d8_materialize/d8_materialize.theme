@@ -160,3 +160,9 @@ function d8_materialize_theme_suggestions_details_alter(array &$suggestions, arr
 function d8_materialize_preprocess_menu_local_task(&$variables) {
     //$variables['element']['#link']['url']->setOption('attributes', array('class'=>'rounded'));
 }
+/**
+ * Implements hook_theme_suggestions_region_alter().
+ */
+function d8_materialize_suggestions_region_alter(array &$suggestions, array $variables) {
+    dsm($suggestions);
+}
