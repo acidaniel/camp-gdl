@@ -1,0 +1,31 @@
+{% include 'region--header.html.twig' %}
+{% if page.content %}
+    {{ page.content }}
+{% endif %}
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                {% if page.footer_left %}
+                    {{ page.footer_left }}
+                {% endif %}
+            </div>
+            <div class="col l6 s12">
+                {% if page.footer_right %}
+                    {{ page.footer_right }}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            {% if page.footer_bottom %}
+                <div class="row l-footer">
+                    <div class="col s12">
+                        {{ page.footer_bottom }}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</footer>
