@@ -24,7 +24,9 @@
  * release is made that includes changes to Pantheon files, but
  * not to any Drupal files.
  */
-define("PANTHEON_VERSION", "1");
+if (!defined("PANTHEON_VERSION")) {
+  define("PANTHEON_VERSION", "2");
+}
 
 /**
  * Set the default location for the 'private' directory.  Note
@@ -129,8 +131,8 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
  * Issue: https://github.com/pantheon-systems/drops-8/issues/114
  *
  */
-if (defined("PANTHEON_BINDING")) {
-  $config['system.file']['path']['temporary'] = '/srv/bindings/'. PANTHEON_BINDING .'/tmp';
+if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
+  $config['system.file']['path']['temporary'] = $_SERVER['HOME'] .'/tmp';
 }
 
 
