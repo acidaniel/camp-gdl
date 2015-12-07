@@ -102,34 +102,54 @@ nav .button-collapse {
   transition: height 100ms;
 }
 
-.top-nav {
-  height: 160px;
-  color: #39434C;
+.menu--main .nav-wrapper {
+  position: relative;
+  top: 30px;
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -ms-transition: all 500ms;
   -o-transition: all 500ms;
   transition: all 500ms;
-  a {
-    color: #39434C;
+
+
+}
+
+.top-nav {
+  float: left;
+  height: 110px;
+  color: #39434C;
+  background-color: transparent;
+  box-shadow: none;
+
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -ms-transition: all 500ms;
+  -o-transition: all 500ms;
+  transition: all 500ms;
+
+  li {
+    margin: 0 1.5em;
   }
+  a {
+    text-transform: uppercase;
+  }
+
   &.sticky {
     position: fixed;
     height: 75px;
     z-index: 9999999;
     opacity: .95;
+    border-bottom: 1px solid #ccc;
+    background-color: #1D597D;
     .site-name {
       display: none;
     }
+    .nav-wrapper {
+      top: 0px;
+    }
     .site-logo {
       img {
-        -webkit-transition: all 300ms;
-        -moz-transition: all 300ms;
-        -ms-transition: all 300ms;
-        -o-transition: all 300ms;
-        transition: all 300ms;
-        height: 50px;
-        width: auto;
+        height:100% ;
       }
     }
     #block-d8-materialize-account-menu {
@@ -149,8 +169,17 @@ nav .button-collapse {
   }
 }
 
+.camp-gdl-front {
+  //background: #194B6E url('/themes/custom/d8_materialize/images/custom/front-image.png') no-repeat scroll center bottom ;
+  background-position: center center;
+  background: radial-gradient( circle, #3091B9, #194B6E);
+  width: 100%;
+  height: 810px;
+}
+
 nav.menu--main {
   box-shadow: none;
+  background-color: transparent;
 }
 
 // tool-bar menu

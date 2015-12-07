@@ -22,5 +22,7 @@ jQuery(document).ready(function() {
         }
     }
 
+    jQuery('.nav-wrapper > ul').removeClass('right');
+
 
 });
