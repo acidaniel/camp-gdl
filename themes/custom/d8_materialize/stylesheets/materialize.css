@@ -10129,7 +10129,13 @@ nav .button-collapse {
   background: -webkit-radial-gradient(circle, #3091B9, #194B6E);
   background: radial-gradient(circle, #3091B9, #194B6E);
   width: 100%;
-  height: 810px; }
+  height: 915px; }
+  .camp-gdl-front .main-image {
+    background: url("../images/custom/main_panel.png") no-repeat 50%;
+    min-height: 770px;
+    position: relative;
+    width: 100%;
+    top: 150px; }
 
 nav.menu--main {
   box-shadow: none;
