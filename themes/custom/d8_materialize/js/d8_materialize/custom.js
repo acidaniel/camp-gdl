@@ -1,7 +1,5 @@
 jQuery(document).ready(function() {
     jQuery('.button-collapse').sideNav();
-
-
     jQuery('.parallax').parallax();
 
     // Sticky Navigation.
@@ -14,10 +12,10 @@ jQuery(document).ready(function() {
     });
     function stickyNav(t, s) {
         if(t < s) {
-            console.log('activate');
+            //console.log('activate');
             jQuery('.top-nav').addClass('sticky').removeClass('no-sticky');
         } else if(s === 0) {
-            console.log('deactivate');
+            //console.log('deactivate');
             jQuery('.top-nav').removeClass('sticky').addClass('no-sticky');
         }
     }

@@ -10036,6 +10036,9 @@ nav.breadcrumb {
 nav .button-collapse {
   float: right; }
 
+.tabs-container {
+  margin-top: 15px; }
+
 .tabs {
   height: inherit;
   border-bottom: 2px solid #4db6ac; }

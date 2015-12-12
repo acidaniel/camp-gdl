@@ -15,6 +15,10 @@
 @import "components/global";
 @import "components/icons-material-design";
 @import "components/grid";
+
+// breakpoint
+@import "vendor/breakpoint/stylesheets/breakpoint";
+
 @import "components/navbar";
 //@import "components/roboto";
 @import "components/typography";

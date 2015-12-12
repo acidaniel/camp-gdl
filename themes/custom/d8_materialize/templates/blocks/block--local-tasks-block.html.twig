@@ -8,7 +8,9 @@
 {% block content %}
     {% if content %}
         <div class="tabs-container" aria-label="{{ 'Tabs'|t }}">
-            {{ content }}
+            <div class="container">
+                {{ content }}
+            </div>
         </div>
     {% endif %}
 {% endblock %}
