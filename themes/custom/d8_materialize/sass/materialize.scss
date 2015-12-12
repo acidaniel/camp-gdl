@@ -16,7 +16,7 @@
 @import "components/icons-material-design";
 @import "components/grid";
 @import "components/navbar";
-@import "components/roboto";
+//@import "components/roboto";
 @import "components/typography";
 @import "../font/font-awesome-4.5.0/scss/font-awesome";
 @import "components/cards";
@@ -44,3 +44,4 @@
 
 // Custom Styling.
 @import "components/custom/custom";
+@import "components/custom/open_sans/open-sans";
