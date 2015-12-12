@@ -4970,20 +4970,20 @@ nav ul a span.badge {
 .mdi-toggle-star:before {
   content: "\e8f5"; }
 
-.container {
+.container, .page-title {
   margin: 0 auto;
   max-width: 1280px;
   width: 90%; }
 
 @media only screen and (min-width : 601px) {
-  .container {
+  .container, .page-title {
     width: 85%; } }
 
 @media only screen and (min-width : 993px) {
-  .container {
+  .container, .page-title {
     width: 70%; } }
 
-.container .row {
+.container .row, .page-title .row {
   margin-left: -0.75rem;
   margin-right: -0.75rem; }
 
@@ -10257,6 +10257,17 @@ footer.page-footer .menu--footer a {
     font-weight: bolder;
     color: #FFF;
     width: 25%;
+    text-align: center; }
+
+#block-views-block-organizadores-block-1 h2 {
+  text-align: center;
+  font-weight: bold; }
+#block-views-block-organizadores-block-1 .view-content {
+  overflow: hidden;
+  padding: 2em 0; }
+  #block-views-block-organizadores-block-1 .view-content .views-row {
+    width: 33%;
+    float: left;
     text-align: center; }
 
 /* BEGIN Light */

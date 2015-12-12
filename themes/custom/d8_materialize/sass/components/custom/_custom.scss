@@ -2,7 +2,9 @@ $custom-color: color("teal", "lighten-2");
 html {
   font-family: "Open Sans";
 }
-
+.page-title {
+  @extend .container;
+}
 .mdi-navigation-menu:before {
   
 }
@@ -377,6 +379,23 @@ footer.page-footer {
     color: #FFF;
     width: 25%;
     text-align: center;
+  }
+}
+// Block view organizadores
+
+#block-views-block-organizadores-block-1 {
+  h2 {
+    text-align: center;
+    font-weight: bold;
+  }
+  .view-content {
+    overflow: hidden;
+    padding: 2em 0;
+    .views-row {
+      width: 33%;
+      float: left;
+      text-align: center;
+    }
   }
 }
 
