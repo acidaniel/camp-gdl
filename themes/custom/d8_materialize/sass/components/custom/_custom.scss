@@ -119,7 +119,6 @@ nav .button-collapse {
   color: #39434C;
   background-color: transparent;
   box-shadow: none;
-
   -webkit-transition: all 500ms;
   -moz-transition: all 500ms;
   -ms-transition: all 500ms;
@@ -127,7 +126,8 @@ nav .button-collapse {
   transition: all 500ms;
 
   li {
-    margin: 0 1.5em;
+    margin: 0 .5em;
+    float: right;
   }
   a {
     text-transform: uppercase;
@@ -138,10 +138,13 @@ nav .button-collapse {
     height: 75px;
     z-index: 9999999;
     opacity: .95;
-    border-bottom: 1px solid #ccc;
+    //border-bottom: 1px solid #ccc;
     background-color: #1D597D;
     .site-name {
       display: none;
+    }
+    nav a {
+      padding: 5px 15px;
     }
     .nav-wrapper {
       top: 0px;

@@ -10099,7 +10099,8 @@ nav .button-collapse {
   -webkit-transition: all 500ms;
   transition: all 500ms; }
   .top-nav li {
-    margin: 0 1.5em; }
+    margin: 0 .5em;
+    float: right; }
   .top-nav a {
     text-transform: uppercase; }
   .top-nav.sticky {
@@ -10107,10 +10108,11 @@ nav .button-collapse {
     height: 75px;
     z-index: 9999999;
     opacity: .95;
-    border-bottom: 1px solid #ccc;
     background-color: #1D597D; }
     .top-nav.sticky .site-name {
       display: none; }
+    .top-nav.sticky nav a {
+      padding: 5px 15px; }
     .top-nav.sticky .nav-wrapper {
       top: 0px; }
     .top-nav.sticky .site-logo img {
