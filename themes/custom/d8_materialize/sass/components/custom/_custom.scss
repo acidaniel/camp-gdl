@@ -351,5 +351,32 @@ footer.page-footer {
   margin: 40px 0;
 }
 
-
+// Backward counter.
+#block-counter {
+  background: #d1d3d5;
+  padding: 100px 0;
+}
+.home-counter {
+  background: #d1d3d5;
+  .labels-container {
+    display: flex;
+    .label {
+      width: 25%;
+      color: #66cef5;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+}
+.counter-container {
+  display: flex;
+  & > div {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #FFF;
+    width: 25%;
+    text-align: center;
+  }
+}
 

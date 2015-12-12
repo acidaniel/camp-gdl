@@ -10229,6 +10229,36 @@ footer.page-footer .menu--footer a {
 .view-id-frontpage {
   margin: 40px 0; }
 
+#block-counter {
+  background: #d1d3d5;
+  padding: 100px 0; }
+
+.home-counter {
+  background: #d1d3d5; }
+  .home-counter .labels-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .home-counter .labels-container .label {
+      width: 25%;
+      color: #66cef5;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center; }
+
+.counter-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .counter-container > div {
+    font-size: 50px;
+    font-weight: bolder;
+    color: #FFF;
+    width: 25%;
+    text-align: center; }
+
 /* BEGIN Light */
 @font-face {
   font-family: 'Open Sans';
