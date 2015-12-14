@@ -1,0 +1,31 @@
+uuid: c929b554-ee36-40a6-8008-8c469bb12bbb
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a4d8f130-4b26-4a2b-8e00-c4bd36d7bcfa'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8_materialize
+id: universidaddeguadalajara
+theme: d8_materialize
+region: '-1'
+weight: -2
+provider: null
+plugin: 'block_content:a4d8f130-4b26-4a2b-8e00-c4bd36d7bcfa'
+settings:
+  id: 'block_content:a4d8f130-4b26-4a2b-8e00-c4bd36d7bcfa'
+  label: 'Universidad de Guadalajara Parallax Box'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

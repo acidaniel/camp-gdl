@@ -1,0 +1,34 @@
+uuid: 7ab15f23-9135-4812-9a09-09ab13547907
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.session.body
+    - field.field.node.session.field_experience
+    - field.field.node.session.field_slides
+    - field.field.node.session.field_status
+    - field.field.node.session.field_track
+    - node.type.session
+  module:
+    - text
+    - user
+id: node.session.teaser
+targetEntityType: node
+bundle: session
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_experience: true
+  field_slides: true
+  field_status: true
+  field_track: true

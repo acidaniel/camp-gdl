@@ -1,0 +1,44 @@
+uuid: 3eb02e50-5be7-4e39-831a-269eb4d70601
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.field.contact_message.sponsor.field_sponsor_level
+id: contact_message.sponsor.default
+targetEntityType: contact_message
+bundle: sponsor
+mode: default
+content:
+  copy:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  field_sponsor_level:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+  mail:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  message:
+    type: string_textarea
+    weight: 4
+    settings:
+      rows: 12
+      placeholder: ''
+    third_party_settings: {  }
+  name:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  subject:
+    type: string_textfield
+    weight: 2
+    settings:
+      size: 60
+      placeholder: 'I want to be sponsor of Drupal Camp Guadalajara'
+    third_party_settings: {  }
+hidden: {  }

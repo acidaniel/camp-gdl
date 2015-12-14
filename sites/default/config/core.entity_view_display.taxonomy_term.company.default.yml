@@ -1,0 +1,61 @@
+uuid: 1e0b09d7-b4c6-434a-ad00-0a530400feef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.company.field_logo
+    - field.field.taxonomy_term.company.field_sponsor
+    - field.field.taxonomy_term.company.field_sponsor_level
+    - field.field.taxonomy_term.company.field_website
+    - taxonomy.vocabulary.company
+  module:
+    - image
+    - link
+    - text
+id: taxonomy_term.company.default
+targetEntityType: taxonomy_term
+bundle: company
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_logo:
+    weight: 5
+    label: above
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_sponsor:
+    weight: 1
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+  field_sponsor_level:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_website:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+hidden: {  }

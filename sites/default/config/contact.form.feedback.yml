@@ -1,0 +1,10 @@
+uuid: 4be8a4b1-d1ea-42b0-8000-f90dd25912f8
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: Contacto
+recipients:
+  - info@drupalcamp.mx
+reply: ''
+weight: 0

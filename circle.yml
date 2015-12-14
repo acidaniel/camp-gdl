@@ -35,4 +35,4 @@ dependencies:
 test:
   override:
     #if you have test please share us :)
-    - exit 1
+    - exit 0

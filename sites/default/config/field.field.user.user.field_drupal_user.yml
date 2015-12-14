@@ -1,0 +1,23 @@
+uuid: 7eac29aa-ad7c-4d9b-b523-35f74db35ca4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_drupal_user
+  module:
+    - link
+    - user
+id: user.user.field_drupal_user
+field_name: field_drupal_user
+entity_type: user
+bundle: user
+label: 'drupal.org Username'
+description: 'For example, https://www.drupal.org/u/username'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

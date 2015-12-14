@@ -1,0 +1,96 @@
+uuid: 1447616e-56c1-4f05-9a00-e73f9b5ba11b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_about_me
+    - field.field.user.user.field_company
+    - field.field.user.user.field_drupal_user
+    - field.field.user.user.field_facebook_profile
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_linkedin_profile
+    - field.field.user.user.field_twitter_profile
+    - field.field.user.user.user_picture
+  module:
+    - image
+    - link
+    - text
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_about_me:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_company:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_drupal_user:
+    weight: 6
+    settings:
+      placeholder_url: 'https://www.drupal.org/u/username'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_facebook_profile:
+    weight: 7
+    settings:
+      placeholder_url: 'https://www.facebook.com/drupalmexico'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_full_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_job_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_linkedin_profile:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_twitter_profile:
+    weight: 8
+    settings:
+      placeholder_url: 'https://twitter.com/drupalmexico'
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  user_picture:
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    weight: 1
+hidden:
+  contact: true
+  language: true
+  timezone: true
