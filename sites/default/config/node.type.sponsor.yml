@@ -1,0 +1,18 @@
+uuid: b005817b-ce73-44d9-8c00-b65f2d72a3d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Patrocinador
+type: sponsor
+description: Patrocinadores
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

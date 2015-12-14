@@ -1,0 +1,24 @@
+uuid: 5ac1543c-65fa-4135-8228-4022080f47af
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - d8_materialize
+id: d8_materialize_tools
+theme: d8_materialize
+region: '-1'
+weight: -4
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

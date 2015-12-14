@@ -1,0 +1,18 @@
+uuid: 3d27998e-a0a9-4d01-b200-c8d4cd1e0356
+langcode: en
+status: true
+dependencies:
+  theme:
+    - d8_materialize
+id: d8_materialize_page_title
+theme: d8_materialize
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

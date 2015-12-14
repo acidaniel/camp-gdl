@@ -1,0 +1,17 @@
+uuid: 8ebed8b2-6839-426a-9e00-cf64bf705f4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: 'main:'
+name: Sesión
+type: session
+description: 'Charlas o conferencias =).'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

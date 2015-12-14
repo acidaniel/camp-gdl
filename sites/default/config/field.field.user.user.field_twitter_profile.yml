@@ -1,0 +1,23 @@
+uuid: bf3dbc21-9f7f-4a7c-b844-68b8bf9a7395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_twitter_profile
+  module:
+    - link
+    - user
+id: user.user.field_twitter_profile
+field_name: field_twitter_profile
+entity_type: user
+bundle: user
+label: 'Twitter Profile'
+description: 'For example, https://twitter.com/drupalmexico'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

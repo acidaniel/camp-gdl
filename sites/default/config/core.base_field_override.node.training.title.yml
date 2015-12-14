@@ -1,0 +1,20 @@
+uuid: ebb449eb-faff-4f2a-8804-4f4a2e8d7b7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.training
+id: node.training.title
+field_name: title
+entity_type: node
+bundle: training
+label: Nombre
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

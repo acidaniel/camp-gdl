@@ -1,0 +1,30 @@
+uuid: 4ad72841-85b2-4ddd-ad57-87073edf6afc
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.main_slider
+  module:
+    - system
+    - views
+  theme:
+    - d8_materialize
+id: d8_materialize_views_block__main_slider_block_1_2
+theme: d8_materialize
+region: '-1'
+weight: -6
+provider: null
+plugin: 'views_block:main_slider-block_1'
+settings:
+  id: 'views_block:main_slider-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

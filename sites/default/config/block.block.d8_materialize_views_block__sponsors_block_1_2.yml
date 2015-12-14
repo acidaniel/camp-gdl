@@ -1,0 +1,24 @@
+uuid: 81953a0c-7bce-46ca-bd00-0b144d2c1e0d
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - views
+  theme:
+    - d8_materialize
+id: d8_materialize_views_block__sponsors_block_1_2
+theme: d8_materialize
+region: '-1'
+weight: -5
+provider: null
+plugin: 'views_block:sponsors-block_1'
+settings:
+  id: 'views_block:sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

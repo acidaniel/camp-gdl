@@ -1,0 +1,9 @@
+uuid: a56a0382-838c-48f8-8e5e-943a7bc532a7
+langcode: en
+status: true
+dependencies: {  }
+name: Company
+vid: company
+description: ''
+hierarchy: 0
+weight: 0

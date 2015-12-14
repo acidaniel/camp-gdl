@@ -1,0 +1,20 @@
+uuid: b4aeb181-8014-4436-9704-4aa21d298c07
+langcode: en
+status: true
+dependencies:
+  theme:
+    - d8_materialize
+id: d8_materialize_local_tasks
+theme: d8_materialize
+region: content
+weight: -11
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
