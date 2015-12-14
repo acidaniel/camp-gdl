@@ -19,23 +19,25 @@ machine:
 dependencies:
   pre:
     - sudo curl https://github.com/pantheon-systems/cli/releases/download/0.9.3/terminus.phar -L -o /usr/local/bin/terminus && sudo chmod +x /usr/local/bin/terminus
-    - sudo curl https://github.com/hechoendrupal/DrupalConsole/releases/download/0.9.7/console.phar -L -o /usr/local/bin/drupal && sudo chmod +x /usr/local/bin/drupal
-    - terminus
-    - drupal list
-    #install Drush
-    #- composer global require drush/drush:6.2.0
-    #- export PATH="$HOME/.composer/vendor/bin:$PATH"
+    #auth to terminus
+    - terminus auth login $PEMAIL --password="$PPASS"
+  override:
+    #when is push to master or mergin a PR
+    - cd $CIRCLE_PROJECT_REPONAME
+    - git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
+    #-
+    - if [ $CIRCLE_BRANCH = 'master' ] && [ $CI_PULL_REQUEST = '' ] ; then \
+      git checkout -b $CIRCLE_BRANCH && \
+      git push pantheon $CIRCLE_BRANCH --force && \
+      terminus drush cim -y --site=$CIRCLE_PROJECT_REPONAME --env=dev && \
+      terminus site clear-caches --site=$CIRCLE_PROJECT_REPONAME --env=$dev; fi
 
-    #install site (make dump of DB)
-    #- drush -r /home/ubuntu/axtelcircleci/docroot -y si standard --account-name=admin --account-pass=admin --db-url=mysql://ubuntu:@127.0.0.1/circle_test
-    #move drush alias to container ~.drush
-    #- mv /home/ubuntu/axtelcircleci/.drush /home/ubuntu/.
+    #- if [ $CIRCLE_BRANCH != 'master' ] ; then \
+    #  terminus site create-env --site=$CIRCLE_PROJECT_REPONAME --to-env=$CIRCLE_PR_USERNAME-pr-$CIRCLE_PR_NUMBER --from-env=dev && \
+    #  git push pantheon $CIRCLE_BRANCH --force && \
+    #  terminus drush cim -y --site=$CIRCLE_PROJECT_REPONAME --env=dev && \
+    #  terminus site clear-caches --site=$CIRCLE_PROJECT_REPONAME --env=$dev; fi \
 
-    #set settings php
-    #- mv /home/ubuntu/axtelcircleci/docroot/sites/default/test_settings.php /home/ubuntu/axtelcircleci/docroot/sites/default/settings.php
-
-    #sync db site
-    #- drush -r /home/ubuntu/axtelcircleci/docroot -y sql-sync @axtelcircleci.dev @self
-
-
-    #- drush -r /home/ubuntu/axtelcircleci/docroot -y en simpletest
+test:
+  override:
+    - return true
