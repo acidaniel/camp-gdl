@@ -23,7 +23,7 @@ dependencies:
     - terminus auth login $PEMAIL --password="$PPASS"
   override:
     #when is push to master or mergin a PR
-    - cd $CIRCLE_PROJECT_REPONAME
+    - pwd
     - git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
     #-
     - if [ $CIRCLE_BRANCH = 'master' ] && [ $CI_PULL_REQUEST = '' ] ; then \
