@@ -23,7 +23,7 @@ dependencies:
     - terminus auth login $PEMAIL --password="$PPASS"
   override:
     #avoid cache remote
-    - if git remote | grep pantheon > /dev/null; git remote rm pantheon; fi
+    - if git remote | grep pantheon > /dev/null; then git remote rm pantheon; fi
     #adding remote once again
     - git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
 
