@@ -22,8 +22,10 @@ dependencies:
     #auth to terminus
     - terminus auth login $PEMAIL --password="$PPASS"
   override:
-    #when is push to master or mergin a PR
-    - if git remote | grep pantheon > /dev/null; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git; fi
+    #avoid cache remote
+    - if git remote | grep pantheon > /dev/null; git remote rm pantheon; fi
+    #adding remote once again
+    - git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
 
     - if [ $CIRCLE_BRANCH == 'master' ] ; then git checkout $CIRCLE_BRANCH && git push pantheon $CIRCLE_BRANCH --force && terminus drush cim -y --site=$CIRCLE_PROJECT_REPONAME --env=dev && terminus site clear-caches --site=$CIRCLE_PROJECT_REPONAME --env=dev; fi
 
