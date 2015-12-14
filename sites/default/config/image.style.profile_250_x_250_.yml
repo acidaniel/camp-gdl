@@ -1,0 +1,14 @@
+uuid: f3c0ec63-8431-4f2c-bf00-c56c8806ed4e
+langcode: en
+status: true
+dependencies: {  }
+name: profile_250_x_250_
+label: 'Profile (250 x 250)'
+effects:
+  c5c856e0-8e28-4dcc-b700-0d5c364ce9a4:
+    uuid: c5c856e0-8e28-4dcc-b700-0d5c364ce9a4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 250
+      height: 250

@@ -1,0 +1,14 @@
+uuid: e50198e4-c276-4c9b-ba31-49a7823fd428
+langcode: en
+status: true
+dependencies: {  }
+name: slider_900_x_400_
+label: 'Slider (900 x 400)'
+effects:
+  d405af3a-e753-4a36-ba09-9c461b8d31d7:
+    uuid: d405af3a-e753-4a36-ba09-9c461b8d31d7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 900
+      height: 400

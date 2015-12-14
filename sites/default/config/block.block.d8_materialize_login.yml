@@ -1,0 +1,20 @@
+uuid: 80b62864-ac90-4bac-b700-efbbaaa553ac
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - d8_materialize
+id: d8_materialize_login
+theme: d8_materialize
+region: '-1'
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'User login'
+  provider: user
+  label_display: visible
+visibility: {  }

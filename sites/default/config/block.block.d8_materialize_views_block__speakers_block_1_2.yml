@@ -1,0 +1,30 @@
+uuid: 421d59a2-e4f7-4733-bf20-3260d849676e
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.speakers
+  module:
+    - system
+    - views
+  theme:
+    - d8_materialize
+id: d8_materialize_views_block__speakers_block_1_2
+theme: d8_materialize
+region: '-1'
+weight: -9
+provider: null
+plugin: 'views_block:speakers-block_1'
+settings:
+  id: 'views_block:speakers-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

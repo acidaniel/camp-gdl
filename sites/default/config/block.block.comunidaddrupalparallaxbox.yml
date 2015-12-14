@@ -1,0 +1,31 @@
+uuid: 4ac1bbb6-8db3-4192-8000-ec8089dec70b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7d0fa7e4-5904-4342-9e3b-593c2b311da5'
+  module:
+    - block_content
+    - system
+  theme:
+    - d8_materialize
+id: comunidaddrupalparallaxbox
+theme: d8_materialize
+region: '-1'
+weight: -1
+provider: null
+plugin: 'block_content:7d0fa7e4-5904-4342-9e3b-593c2b311da5'
+settings:
+  id: 'block_content:7d0fa7e4-5904-4342-9e3b-593c2b311da5'
+  label: 'Comunidad Drupal Parallax Box'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

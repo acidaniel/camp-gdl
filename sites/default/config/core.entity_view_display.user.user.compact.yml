@@ -1,0 +1,41 @@
+uuid: 2c143eb4-4432-4897-983e-62b259b80f11
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_about_me
+    - field.field.user.user.field_company
+    - field.field.user.user.field_drupal_user
+    - field.field.user.user.field_facebook_profile
+    - field.field.user.user.field_full_name
+    - field.field.user.user.field_job_title
+    - field.field.user.user.field_linkedin_profile
+    - field.field.user.user.field_twitter_profile
+    - field.field.user.user.user_picture
+  module:
+    - image
+    - user
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  field_about_me: true
+  field_company: true
+  field_drupal_user: true
+  field_facebook_profile: true
+  field_full_name: true
+  field_job_title: true
+  field_linkedin_profile: true
+  field_twitter_profile: true
+  member_for: true

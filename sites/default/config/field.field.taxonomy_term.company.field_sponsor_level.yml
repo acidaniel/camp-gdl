@@ -1,0 +1,27 @@
+uuid: c453546f-e3de-4fb1-a900-f84aeab11216
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor_level
+    - taxonomy.vocabulary.company
+    - taxonomy.vocabulary.sponsor_level
+id: taxonomy_term.company.field_sponsor_level
+field_name: field_sponsor_level
+entity_type: taxonomy_term
+bundle: company
+label: 'Sponsor Level'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      sponsor_level: sponsor_level
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

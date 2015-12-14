@@ -1,0 +1,10 @@
+uuid: 735c089f-77d2-49a9-b600-f448c12e022f
+langcode: en
+status: true
+dependencies: {  }
+id: sponsor
+label: 'Participa como patrocinador'
+recipients:
+  - info@drupalcamp.mx
+reply: 'Gracias por querer formar parte de este Drupal Camp Guadalajara en breve nos contactaremos contigo para darle seguimiento a su participacion como patrocinador '
+weight: 0

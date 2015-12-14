@@ -1,0 +1,24 @@
+uuid: d3f9837e-f0e5-4b50-815c-92db7337f8a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.training.body
+    - node.type.training
+  module:
+    - text
+    - user
+id: node.training.default
+targetEntityType: node
+bundle: training
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden: {  }
