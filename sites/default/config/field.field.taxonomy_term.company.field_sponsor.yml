@@ -1,0 +1,23 @@
+uuid: 38fe234b-a152-409d-bf00-dfa02ea3d35f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_sponsor
+    - taxonomy.vocabulary.company
+id: taxonomy_term.company.field_sponsor
+field_name: field_sponsor
+entity_type: taxonomy_term
+bundle: company
+label: Sponsor
+description: 'This company is Sponsor'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Is Sponsor'
+  off_label: 'Off'
+field_type: boolean

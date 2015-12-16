@@ -1,0 +1,30 @@
+uuid: 1a5542e7-dbae-4abb-af05-5a969119a4f4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_experience
+field_name: field_experience
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: beginner
+      label: Principiante
+    -
+      value: intermediate
+      label: Intermedio
+    -
+      value: advanced
+      label: Avanzado
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

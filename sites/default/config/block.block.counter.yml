@@ -1,0 +1,25 @@
+uuid: 24a85a2a-083d-4f1b-874d-77cab7c3192e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:746058fe-3a67-40c4-a212-18c4be80a8fc'
+  module:
+    - block_content
+  theme:
+    - d8_materialize
+id: counter
+theme: d8_materialize
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:746058fe-3a67-40c4-a212-18c4be80a8fc'
+settings:
+  id: 'block_content:746058fe-3a67-40c4-a212-18c4be80a8fc'
+  label: Counter
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

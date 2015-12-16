@@ -1,0 +1,27 @@
+uuid: 5af7cdd8-6d50-4cdd-9200-e51394ef2b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.sponsor
+    - field.field.contact_message.sponsor.field_sponsor_level
+id: contact_message.sponsor.default
+targetEntityType: contact_message
+bundle: sponsor
+mode: default
+content:
+  field_sponsor_level:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  message:
+    type: string
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

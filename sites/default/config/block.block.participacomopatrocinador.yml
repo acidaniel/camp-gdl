@@ -1,0 +1,31 @@
+uuid: ee701ecd-e65f-4b9a-b100-c98929fc9583
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:65ef4a58-18a3-4b5c-9d06-6f49aea6f081'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: participacomopatrocinador
+theme: bartik
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:65ef4a58-18a3-4b5c-9d06-6f49aea6f081'
+settings:
+  id: 'block_content:65ef4a58-18a3-4b5c-9d06-6f49aea6f081'
+  label: 'Participa como patrocinador'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /contact/sponsor
+    negate: false
+    context_mapping: {  }
