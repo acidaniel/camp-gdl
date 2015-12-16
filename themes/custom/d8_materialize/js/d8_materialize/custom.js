@@ -3,7 +3,6 @@ jQuery(document).ready(function() {
     jQuery('.parallax').parallax();
 
     // Sticky Navigation.
-
     jQuery(window).scroll(function() {
         var topnav = jQuery('.site-logo img').position();
         var topdistance = topnav.top
@@ -20,7 +19,6 @@ jQuery(document).ready(function() {
         }
     }
 
-    jQuery('.nav-wrapper > ul').removeClass('right');
 
     // Backwards counter.
     origin = moment("2016-04-07 09:00:00", "YYYY-MM-DD HH:mm:ss");

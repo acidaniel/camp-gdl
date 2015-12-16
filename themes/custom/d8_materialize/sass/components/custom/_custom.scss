@@ -102,7 +102,7 @@ nav .button-collapse {
   opacity: 1;
 }
 .site-logo img {
-  height: 95px;
+ max-height: 95px;
   -webkit-transition: height 100ms;
   -moz-transition: height 100ms;
   -ms-transition: height 100ms;
@@ -180,20 +180,6 @@ nav .button-collapse {
   }
 }
 
-.camp-gdl-front {
-  //background: #194B6E url('/themes/custom/d8_materialize/images/custom/front-image.png') no-repeat scroll center bottom ;
-  background-position: center center;
-  background: radial-gradient( circle, #3091B9, #194B6E);
-  width: 100%;
-  height: 915px;
-  .main-image {
-    background: url("../images/custom/main_panel.png") no-repeat 50%;
-    min-height: 770px;
-    position: relative;
-    width: 100%;
-    top: 150px;
-  }
-}
 
 nav.menu--main {
   box-shadow: none;
@@ -384,12 +370,11 @@ footer.page-footer {
     text-align: center;
   }
 }
-// Block view organizadores
 
+// Block view organizadores
 #block-views-block-organizadores-block-1 {
   h2 {
     text-align: center;
-    font-weight: bold;
   }
   .view-content {
     overflow: hidden;
