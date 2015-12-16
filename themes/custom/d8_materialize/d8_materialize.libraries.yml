@@ -8,5 +8,6 @@ global-styles:
     js/bin/materialize.js: { scope: Footer }
     js/vendor/moment.js: { scope: Footer }
     js/d8_materialize/custom.js: { scope: Footer }
+    js/d8_materialize/jeyram.js: { scope: Footer }
   dependencies:
     - core/jquery.once
